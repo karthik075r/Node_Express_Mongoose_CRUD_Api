@@ -1,0 +1,18 @@
+clone and run npm i 
+to start app => npm run dev
+
+install typescript =>  sudo npm i -g typescript 
+
+generate tsconfig.json => tsc --init
+
+generate package.json => npm init -y
+
+install express => npm i express
+
+install dev dependencies => npm i -D typescript ts-node nodemon @types/node @types/express
+
+add scripts in package.json => "scripts": {
+    "start":"node dist/app.js",
+    "dev":"nodemon src/app.ts",
+    "build":"tsc -p ." // generates ts compiled into dist folder
+  },
